@@ -96,10 +96,11 @@ const drawerNav = createDrawerNavigator({
             drawerLabel: 'Filter Meal'
         }
     }
-}, {
+}, {drawerWidth:160,
     contentOptions: {
         activeTintColor: Color.accent,
-        labelStyle: 'open-sans-bold'
+        labelStyle: 'open-sans-bold',
+
     }
 })
 

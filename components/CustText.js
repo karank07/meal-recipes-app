@@ -1,13 +1,14 @@
 import React from 'react';
-import {Text, StyleSheet} from 'react-native';
+import { Text, StyleSheet } from 'react-native';
 
-const custText= props =>{
-return <Text style={styles.text}>{props.children}</Text>;
+const custText = props => {
+    return <Text style={{ ...styles.text, ...props.style }}>{props.children}</Text>;
 };
 
-const styles=StyleSheet.create({
-    text:{
-        fontFamily: 'open-sans'
+const styles = StyleSheet.create({
+    text: {
+        fontFamily: 'open-sans',
+        
     }
 });
 export default custText;

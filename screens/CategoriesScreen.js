@@ -1,7 +1,6 @@
-import React, { version } from 'react';
-import { View, StyleSheet, Text, Button, FlatList, } from 'react-native';
+import React from 'react';
+import { StyleSheet, FlatList } from 'react-native';
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
-import { Ionicons } from '@expo/vector-icons';
 
 import HeaderButton from '../components/HeaderButton';
 import { CATEGORIES } from '../Data/Data';
