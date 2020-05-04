@@ -1,23 +1,38 @@
 import React from 'react';
+import { View, StyleSheet } from 'react-native';
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
+import { useSelector } from 'react-redux';
 
-import { MEALS } from '../Data/Data';
+import CustText from '../components/CustText';
 import HeaderButton from '../components/HeaderButton';
 import MealList from '../components/MealList';
 
 const favouriteMealsScreen = props => {
-    const displayList = MEALS.filter(meal => meal.id === 'm1' || meal.id === 'm2');
-    return <MealList listData={displayList} navigation={props.navigation} />
+    const favMeals = useSelector(state => state.meals.favourites);
+    if (favMeals.length === 0) {
+        return <View style={styles.container}>
+            <CustText style={{ textAlign: 'center', fontSize: 18 }}>No favourites found!</CustText>
+        </View>;
+    }
+    return <MealList listData={favMeals} navigation={props.navigation} />;
 };
 
 favouriteMealsScreen.navigationOptions = navData => {
     return {
-        headerTitle: 'Your Favourties',
+        headerTitle: 'Your Favourites',
         headerLeft:
             (<HeaderButtons HeaderButtonComponent={HeaderButton}>
                 <Item title='Menu' iconName='ios-menu' onPress={() => { navData.navigation.toggleDrawer() }}></Item>
             </HeaderButtons>)
     }
 };
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center'
+    }
+});
 
 export default favouriteMealsScreen;
