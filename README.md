@@ -16,6 +16,17 @@ This project was created to practice Navigation and State management concepts of
 
 ## App Preview
 
+<p>
+  <img width="190" height="390" src="https://github.com/karank07/meal-app/blob/master/preview/screen1.png" >
+  <img width="190" height="390" src="https://github.com/karank07/meal-app/blob/master/preview/screen4.png" >
+  <img width="190" height="390" src="https://github.com/karank07/meal-app/blob/master/preview/screen8.png" >
+  <img width="190" height="390" src="https://github.com/karank07/meal-app/blob/master/preview/screen9.png" >
+  <img width="190" height="390" src="https://github.com/karank07/meal-app/blob/master/preview/screen2.png" >
+  <img width="190" height="390" src="https://github.com/karank07/meal-app/blob/master/preview/screen6.png" >
+  <img width="190" height="390" src="https://github.com/karank07/meal-app/blob/master/preview/screen3.png" >
+  <img width="190" height="390" src="https://github.com/karank07/meal-app/blob/master/preview/screen7.png" >
+</p>
+
 #
 
 [React Native](https://github.com/facebook/react-native)
