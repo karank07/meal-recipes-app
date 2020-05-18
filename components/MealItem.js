@@ -29,23 +29,20 @@ const styles = StyleSheet.create({
         height: 200,
         width: '100%',
         backgroundColor: '#f5f5f5',
-        shadowColor: 'black',
-        shadowOffset: {height: 3, width: 0},
-        shadowOpacity: 0.26,
-        shadowRadius: 10,
-        elevation: 5,
         borderRadius: 10,
-        overflow: 'hidden',
-        margin: 5
+        marginVertical: 20,
+        overflow: 'hidden'
     },
     row: {
         flexDirection: 'row',
+        
         
     },
     img: {
         width: '100%',
         height: '100%',
         justifyContent: 'flex-end'
+      
     },
     titleContainer: {
         backgroundColor: 'rgba(0,0,0,0.5)',
